@@ -2,9 +2,9 @@ import numpy as np
 import cust_input
 import phase_portraits as pp
 
-#variant #37:
-#x_dot = x^2 - y
-#y_dot = (x - y)*(x - y + 2)
+# variant 37:
+# x_dot = x^2 - y
+# y_dot = (x - y)*(x - y + 2)
 
 print("1 - Constant alphas\n2 - Alphas, varying by exponential law\n3 - Alphas, varying by normalized law\n")
 
@@ -21,7 +21,6 @@ n = cust_input.int_input(1, 20, "Enter the number of starting points you need: \
 x = np.zeros([n, N])
 y = np.zeros([n, N])
 
-i = 0
 for i in range(n):
     print("\nEnter point #", i + 1, ":")
     x[i, 0] = cust_input.float_input(-1000000000, 1000000000, "Enter x0(from -1000000000 to 1000000000): \n")
