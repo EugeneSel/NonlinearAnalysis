@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 from fractals import mandelbrot_set, julia_set, mandelbrot_set_trig
 import numpy as np
 
+
 # Mandelbrot fractals for power functions:
 for i in range(2, 7):
     result = mandelbrot_set(256, 10, -2, 2, -1.5, 1.5, 640, 480, i)
