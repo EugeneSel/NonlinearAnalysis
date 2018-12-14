@@ -74,7 +74,7 @@ def julia_set(iterations, top_border, x_min, x_max, y_min, y_max, x_points, y_po
             else:
                 c = c_Re + 1j * c_Im
 
-            z = math.cos(x) + 1j * math.cos(y)
+            z = math.asinh(x) + 1j * math.asinh(y)
             for k in range(iterations):
                 z = z ** deg_z + c
 
